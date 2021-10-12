@@ -32,9 +32,9 @@ class ContactList extends StatelessWidget {
   final _back = ContactListBack();
 
   CircleAvatar circleAvatar(String url) {
-    try {
+    if (Uri.tryParse(url).isAbsolute) {
       return CircleAvatar(backgroundImage: NetworkImage(url));
-    } catch (e) {
+    } else {
       return CircleAvatar(child: Icon(Icons.person));
     }
   }
@@ -74,7 +74,8 @@ class ContactList extends StatelessWidget {
             IconButton(
                 icon: Icon(Icons.add),
                 onPressed: () {
-                  Navigator.of(context).pushNamed(MyApp.CONTACT_FORM);
+                  _back.gotToForm(context);
+                  //Navigator.of(context).pushNamed(MyApp.CONTACT_FORM);
                 })
           ],
         ),
