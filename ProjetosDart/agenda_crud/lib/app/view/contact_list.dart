@@ -1,5 +1,5 @@
 import 'package:agenda_crud/app/domain/entities/contact.dart';
-import 'package:agenda_crud/app/my_app.dart';
+//import 'package:agenda_crud/app/my_app.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -58,7 +58,7 @@ class ContactList extends StatelessWidget {
                         FlatButton(
                             child: Text('Não'),
                             onPressed: () {
-                              Navigator.of(context).pop();                              
+                              Navigator.of(context).pop();
                             }),
                         FlatButton(child: Text('Sim'), onPressed: onPressed)
                       ]));

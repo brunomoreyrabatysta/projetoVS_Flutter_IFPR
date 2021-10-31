@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "214846508879",
+    "project_id": "agenda-crud-dart",
+    "storage_bucket": "agenda-crud-dart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214846508879:android:8f3ea7fd2c727db1f5ff3a",
+        "android_client_info": {
+          "package_name": "br.com.brunobatysta.agenda_crud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214846508879-76rj6vvtrs8qrdo1ge9b15n1ccdaslok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB84Q9n6WaC78JlXUnHRPnsXKJpVKzWwIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214846508879-76rj6vvtrs8qrdo1ge9b15n1ccdaslok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
