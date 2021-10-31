@@ -1,9 +1,9 @@
 import 'package:agenda_crud/app/domain/entities/contact.dart';
+import 'package:agenda_crud/app/my_app.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
-import '../my_app.dart';
 import 'contact_list_back.dart';
 
 class ContactList extends StatelessWidget {
@@ -58,7 +58,7 @@ class ContactList extends StatelessWidget {
                         FlatButton(
                             child: Text('Não'),
                             onPressed: () {
-                              Navigator.of(context).pop();
+                              Navigator.of(context).pop();                              
                             }),
                         FlatButton(child: Text('Sim'), onPressed: onPressed)
                       ]));
@@ -97,6 +97,9 @@ class ContactList extends StatelessWidget {
                       return ListTile(
                           leading: circleAvatar(contato.urlAvatar),
                           title: Text(contato.nome),
+                          onTap: () {
+                            _back.gotToDetails(context, contato);
+                          },
                           subtitle: Text(contato.telefone),
                           trailing: Container(
                               width: 100,

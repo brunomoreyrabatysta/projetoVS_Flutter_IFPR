@@ -30,12 +30,16 @@ abstract class _ContactListBack with Store {
   gotToForm(BuildContext context, [Contact contact]) {
     Navigator.of(context)
         .pushNamed(MyApp.CONTACT_FORM, arguments: contact)
-        .then(refreshList());
+        .then(refreshList);
   }
 
   // excluir
   remove(int id) {
     _service.remove(id);
     refreshList();
+  }
+
+  gotToDetails(BuildContext context, Contact contato) {
+    Navigator.of(context).pushNamed(MyApp.CONTACT_DETAILS, arguments: contato);
   }
 }
